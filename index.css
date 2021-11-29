@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Poppins';
+}
+
+/*  Desktop */
+@media only screen and (min-width: 768px) {
+    .main {
+        margin: 4em 10em;
+    }
+        #header h1 {
+            font-family: 'Poppins';
+            font-weight: 200;
+            font-size: 2.3em;
+            color: hsl(229, 6%, 66%);
+            margin-bottom: 0.2em;
+            text-align: center;
+        }
+
+
+    #services {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2em;
+        margin-top: 5%;
+    }
+
+
+    /* ### Primary
+
+    - Red: hsl(0, 78%, 62%)
+    - Cyan: hsl(180, 62%, 55%)
+    - Orange: hsl(34, 97%, 64%)
+    - Blue: hsl(212, 86%, 64%) */
+
+
+    .service-box {
+        margin-bottom: 2em;
+        padding: 2em;
+        box-shadow: 0px 20px 20px 5px #d4dbdd;
+        border-radius: 8px;
+    }
+
+    .service-box h4 {
+        font-family: 'Poppins';
+        font-size: 1.5em;
+        font-weight: 600;
+        color: hsl(234, 12%, 34%);
+        margin-bottom: 0.4em;
+    }
+
+    .service-box p {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 1.1em;
+        font-weight: 200;
+        color: hsl(229, 6%, 66%);
+        margin-bottom: 2em;
+    }
+
+    .service-box img {
+        display: block;
+        float: right;
+    }
+    /* Initial box will be centred. 
+    Create a div for the next two boxes.
+    Float them left and right.
+    Clear the last box and place it below. */
+
+
+    #s-box1 {
+        border-top: 5px solid hsl(180, 62%, 55%);
+        max-height: 16em;
+        padding: 2em;
+        width: 23em;
+        margin: auto;
+    }
+
+    #mid-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #s-box2 {
+        border-top: 5px solid hsl(0, 78%, 62%);
+        max-height: 16em;
+        width: 24em;
+    }
+
+    #s-box3 {
+        border-top: 5px solid hsl(34, 97%, 64%);
+        max-height: 16em;
+        width: 24em;
+    }
+
+    #s-box4 {
+        border-top: 5px solid hsl(212, 86%, 64%);
+        max-height: 16em;
+        padding: 2em;
+        width: 23em;
+        margin: auto;
+    }
+
+    h2 {
+        font-size: 2.3em;
+        color:hsl(234, 12%, 34%);
+        font-weight: 600;
+        margin-bottom: 0.5em;
+    }
+
+    h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.1em;
+    color: hsl(229, 6%, 66%);
+    text-align: center; 
+    font-weight: 200;
+    max-width: 30em;
+    margin: 0 auto;
+    margin-bottom: 4em;
+    }
+
+    h4 {
+        font-size: auto;
+    }
+
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .main {
+        margin: auto;
+    }
+        #header h1 {
+            font-family: 'Poppins';
+            font-weight: 400;
+            font-size: 1.7em;
+            color: hsl(229, 6%, 66%);
+            margin-top: 3em;
+            margin-bottom: 0.2em;
+            text-align: center;
+        }
+
+
+    #services {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2em;
+        margin-top: 5%;
+    }
+
+
+    /* ### Primary
+
+    - Red: hsl(0, 78%, 62%)
+    - Cyan: hsl(180, 62%, 55%)
+    - Orange: hsl(34, 97%, 64%)
+    - Blue: hsl(212, 86%, 64%) */
+
+
+    .service-box {
+        margin-bottom: 2em;
+        padding: 2em;
+        box-shadow: 0px 20px 20px 5px #d4dbdd;
+        border-radius: 8px;
+
+    }
+
+    .service-box h4 {
+        font-family: 'Poppins';
+        font-size: 1.5em;
+        font-weight: 600;
+        color: hsl(234, 12%, 34%);
+        margin-bottom: 0.4em;
+    }
+
+    .service-box p {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 1.1em;
+        font-weight: 200;
+        color: hsl(229, 6%, 66%);
+        margin-bottom: 2em;
+    }
+
+    .service-box img {
+        display: block;
+        float: right;
+    }
+    /* Initial box will be centred. 
+    Create a div for the next two boxes.
+    Float them left and right.
+    Clear the last box and place it below. */
+
+
+    #s-box1 {
+        border-top: 5px solid hsl(180, 62%, 55%);
+        max-height: 16em;
+        padding: 2em;
+        width: 20em;
+        margin: auto;
+    }
+
+    #mid-section {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+    }
+
+    #s-box2 {
+        border-top: 5px solid hsl(0, 78%, 62%);
+        max-height: 16em;
+        width: 20em;
+    }
+
+    #s-box3 {
+        border-top: 5px solid hsl(34, 97%, 64%);
+        max-height: 16em;
+        width: 20em;
+    }
+
+    #s-box4 {
+        border-top: 5px solid hsl(212, 86%, 64%);
+        max-height: 16em;
+        padding: 2em;
+        width: 20em;
+        margin: auto;
+    }
+
+    h2 {
+        font-size: 1.7em;
+        color:hsl(234, 12%, 34%);
+        font-weight: 600;
+        margin-bottom: 0.5em;
+    }
+
+    h3 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.1em;
+    color: hsl(229, 6%, 66%);
+    text-align: center; 
+    font-weight: 200;
+    max-width: 70%;
+    margin: 0 auto;
+    margin-bottom: 4em;
+    }
+
+    h4 {
+        font-size: auto;
+    }
+
+}
+
+/* use vw for width but pixels for height */
